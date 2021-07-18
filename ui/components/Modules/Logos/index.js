@@ -7,9 +7,14 @@ import ImgSamsung from './images/samsung.png';
 
 const Logos = () => {
   return (
-    <Flex justifyContent="center" color="white" alignItems="center">
+    <Flex
+      justifyContent="center"
+      color="white"
+      alignItems="center"
+      as="section"
+    >
       <Box py="16">
-        <Text as="p" align="center">
+        <Text as="p" align="center" fontWeight="semibold">
           Here are some logos of companies who agree:
         </Text>
         <Flex
@@ -17,6 +22,7 @@ const Logos = () => {
           color="white"
           alignItems="center"
           flexWrap="wrap"
+          px={{ base: '10', md: '5' }}
         >
           <Img m="4" src={ImgGoogle.src} width={ImgGoogle.width / 2} />
           <Img m="4" src={ImgHP.src} width={ImgHP.width / 2} />

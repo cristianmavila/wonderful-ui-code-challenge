@@ -1,8 +1,15 @@
-import { Flex, Heading } from '@chakra-ui/react';
+import { Flex, Heading, Text } from '@chakra-ui/react';
 
 const Headline = () => {
   return (
-    <Flex alignItems="center" justifyContent="center" py="14" color="white">
+    <Flex
+      alignItems="center"
+      justifyContent="center"
+      py="14"
+      px={{ base: '10', md: '5' }}
+      color="white"
+      as="section"
+    >
       <Heading
         as="h2"
         fontSize="40px"
@@ -10,8 +17,12 @@ const Headline = () => {
         maxWidth="container.lg"
         fontWeight="normal"
       >
-        When it comes to building beautiful user interfaces, think about the
-        user - how will they feel?
+        When it comes to building beautiful user interfaces,
+        <br />{' '}
+        <Text as="span" color="orange.50">
+          think about the user
+        </Text>{' '}
+        - how will they feel?
       </Heading>
     </Flex>
   );

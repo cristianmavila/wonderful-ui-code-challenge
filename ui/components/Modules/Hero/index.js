@@ -7,12 +7,17 @@ const Hero = () => {
     <Box
       backgroundImage={ImgDots.src}
       backgroundRepeat="no-repeat"
-      backgroundPosition="right center"
-      backgroundSize="auto 80%"
+      backgroundPosition={{ base: '50% bottom', md: '80% center' }}
+      backgroundSize={{ base: 'auto 50%', md: 'auto 80%' }}
+      as="section"
     >
       <Container maxW="container.lg" color="white">
-        <Flex alignItems="center">
-          <Box w="50%" py={10}>
+        <Flex
+          alignItems="center"
+          flexDirection={{ base: 'column', md: 'row' }}
+          textAlign={{ base: 'center', md: 'left' }}
+        >
+          <Box w={{ base: '100%', md: '50%' }} py={10}>
             <Heading as="h1" size="lg" fontSize="40px" mb={3}>
               Development is{' '}
               <Text as="span" color="blue.500">
@@ -26,7 +31,7 @@ const Hero = () => {
               time to set ourselves up for success.
             </Text>
           </Box>
-          <Box w="50%" py={10}>
+          <Box w={{ base: '100%', md: '50%' }} py={10}>
             <Img
               htmlWidth="478px"
               htmlHeight="280px"

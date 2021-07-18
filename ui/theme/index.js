@@ -12,7 +12,11 @@ const theme = {
     brand: {
       100: '#0C1A3B',
     },
+    orange: {
+      50: '#FBBC79',
+    },
     blue: {
+      200: '#A1BDF3',
       500: '#6F97F6',
     },
   },
