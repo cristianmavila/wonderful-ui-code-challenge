@@ -1,0 +1,19 @@
+.section .wave {
+    width: 100%;
+    height: 100%;
+}
+
+.section .presentation {
+  width: 100%;
+}
+
+.circles {
+  width: 100%;
+}
+
+@media screen and (min-width: 48em) {
+  .section .presentation {
+    margin-left: -50%;
+    width: auto;
+  }
+}

@@ -6,6 +6,7 @@ import Header from '../ui/components/Header';
 import Headline from '../ui/components/Modules/Headline';
 import Carousel from '../ui/components/Modules/Carousel';
 import LearnMore from '../ui/components/Modules/LearnMore';
+import Footer from '../ui/components/Footer';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Carousel />
         <LearnMore />
       </main>
+      <Footer />
     </Box>
   );
 }

@@ -83,6 +83,10 @@ export default function Header() {
                   textDecoration: 'none',
                   bg: 'blue.500',
                 }}
+                _active={{
+                  textDecoration: 'none',
+                  bg: 'blue.500',
+                }}
                 href={'#'}
               >
                 Login
@@ -94,6 +98,7 @@ export default function Header() {
                 borderWidth="thin"
                 rounded={4}
                 _hover={{ bg: 'brand.100', borderColor: 'blue.500' }}
+                _active={{ bg: 'brand.100', borderColor: 'blue.500' }}
               >
                 Sign up
               </Button>

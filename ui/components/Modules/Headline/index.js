@@ -9,6 +9,8 @@ const Headline = () => {
       px={{ base: '10', md: '5' }}
       color="white"
       as="section"
+      zIndex="2"
+      pos="relative"
     >
       <Heading
         as="h2"
