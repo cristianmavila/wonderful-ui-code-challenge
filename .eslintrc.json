@@ -6,11 +6,11 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "next"
     ],
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": false
         },
         "ecmaVersion": 12,
         "sourceType": "module"
@@ -19,5 +19,7 @@
         "react"
     ],
     "rules": {
+      "react/no-unescaped-entities": "off",
+      "@next/next/no-page-custom-font": "off"
     }
 }
